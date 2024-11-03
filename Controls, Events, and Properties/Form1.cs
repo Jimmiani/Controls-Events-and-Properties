@@ -27,14 +27,25 @@ namespace Controls__Events__and_Properties
             imgCharacter.Visible = true;
             lblStatus.Text = "Status: Clicked";
             btnSubmit.Enabled = false;
+            btnQuit.Enabled = true;
         }
 
-        private void btnSubmit_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnQuit_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void lblInstructions_Click(object sender, EventArgs e)
+        private void imgCharacter_Click(object sender, EventArgs e)
+        {
+            imgCharacter.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.RoyalBlue;
+        }
+
+        private void btnSurprise_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
