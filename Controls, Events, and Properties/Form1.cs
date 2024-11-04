@@ -45,9 +45,10 @@ namespace Controls__Events__and_Properties
             this.BackColor = Color.RoyalBlue;
         }
 
-        private void btnSurprise_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnSurprise_MouseHover(object sender, EventArgs e)
         {
-
+            lblSurprise.Visible = true;
+            btnSurprise.Enabled = false;
         }
     }
 }

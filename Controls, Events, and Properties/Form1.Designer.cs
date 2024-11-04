@@ -36,7 +36,7 @@
             this.btnQuit = new System.Windows.Forms.Button();
             this.btnColorChange = new System.Windows.Forms.Button();
             this.btnSurprise = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSurprise = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,29 +113,31 @@
             // 
             this.btnSurprise.BackColor = System.Drawing.Color.Cyan;
             this.btnSurprise.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSurprise.Location = new System.Drawing.Point(664, 233);
+            this.btnSurprise.Location = new System.Drawing.Point(648, 233);
             this.btnSurprise.Name = "btnSurprise";
-            this.btnSurprise.Size = new System.Drawing.Size(124, 73);
+            this.btnSurprise.Size = new System.Drawing.Size(140, 83);
             this.btnSurprise.TabIndex = 6;
-            this.btnSurprise.Text = "Click me for a surprise!";
+            this.btnSurprise.Text = "Hover over me for a surprise!";
             this.btnSurprise.UseVisualStyleBackColor = false;
-            this.btnSurprise.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnSurprise_KeyPress);
+            this.btnSurprise.MouseHover += new System.EventHandler(this.btnSurprise_MouseHover);
             // 
-            // label1
+            // lblSurprise
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(503, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
+            this.lblSurprise.AutoSize = true;
+            this.lblSurprise.Font = new System.Drawing.Font("Segoe Print", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSurprise.Location = new System.Drawing.Point(306, 375);
+            this.lblSurprise.Name = "lblSurprise";
+            this.lblSurprise.Size = new System.Drawing.Size(219, 62);
+            this.lblSurprise.TabIndex = 7;
+            this.lblSurprise.Text = "SURPRISE!";
+            this.lblSurprise.Visible = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(817, 531);
+            this.Controls.Add(this.lblSurprise);
             this.Controls.Add(this.btnSurprise);
             this.Controls.Add(this.btnColorChange);
             this.Controls.Add(this.btnQuit);
@@ -161,7 +163,7 @@
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Button btnColorChange;
         private System.Windows.Forms.Button btnSurprise;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSurprise;
     }
 }
 
